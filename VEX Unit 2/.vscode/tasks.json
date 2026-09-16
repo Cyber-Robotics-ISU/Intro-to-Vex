@@ -1,0 +1,31 @@
+{
+    // Optional: build the file you are looking at with warnings on, and get
+    // clickable errors in the PROBLEMS panel. Run with Terminal > Run Build Task
+    // (Ctrl+Shift+B on Windows/Linux, Cmd+Shift+B on Mac).
+    //
+    // Most students can ignore this file and just use the Code Runner play
+    // button. This is here for anyone who prefers VS Code's built-in build.
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build C file (gcc -Wall)",
+            "type": "shell",
+            "command": "gcc",
+            "args": ["-Wall", "${file}", "-o", "${fileDirname}/${fileBasenameNoExtension}"],
+            "group": { "kind": "build", "isDefault": true },
+            "problemMatcher": ["$gcc"],
+            "presentation": { "reveal": "always", "panel": "shared" },
+            "detail": "Use this for the .c files (01, 02, 03, 04, 06)."
+        },
+        {
+            "label": "Build C++ file (g++ -Wall)",
+            "type": "shell",
+            "command": "g++",
+            "args": ["-Wall", "${file}", "-o", "${fileDirname}/${fileBasenameNoExtension}"],
+            "group": "build",
+            "problemMatcher": ["$gcc"],
+            "presentation": { "reveal": "always", "panel": "shared" },
+            "detail": "Use this for the .cpp files (05, 07, 08)."
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    // === Code Runner: the one-click "Run" button (press the play arrow) ===
+    // .c  files are built with gcc, .cpp files with g++. Warnings are ON
+    // (-Wall) on purpose: several bugs in these exercises compile cleanly
+    // and ONLY show up as a warning, so do not ignore them.
+    "code-runner.executorMap": {
+        "c":   "cd $dir && gcc -Wall \"$fileName\" -o \"$fileNameWithoutExt\" && \"$dir$fileNameWithoutExt\"",
+        "cpp": "cd $dir && g++ -Wall \"$fileName\" -o \"$fileNameWithoutExt\" && \"$dir$fileNameWithoutExt\""
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.clearPreviousOutput": true,
+
+    // Show whitespace so a missing brace or stray semicolon is easier to spot.
+    "editor.renderWhitespace": "boundary",
+    "files.trimTrailingWhitespace": false
+}
