@@ -1,0 +1,27 @@
+# Compiled programs students produce while fixing the exercises.
+# Source files (.c / .cpp) are tracked; built binaries are not.
+
+*.exe
+*.o
+*.out
+a.out
+*.dSYM/
+
+# Extensionless executables (produced on Mac/Linux), by exercise name
+01_variables
+02_if_logic
+03_for_loops
+04_while_loops
+05_functions
+06_pointers
+07_arrays_structs
+08_robot_class
+
+solutions/01_variables
+solutions/02_if_logic
+solutions/03_for_loops
+solutions/04_while_loops
+solutions/05_functions
+solutions/06_pointers
+solutions/07_arrays_structs
+solutions/08_robot_class
